@@ -91,6 +91,9 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 0.2vw;
+    text-decoration: none;
+    color: #1f2029;
+    margin-top: 5%;
 }
 
 .action_container i{
@@ -100,15 +103,26 @@ header {
 
 }
 
-.action_container {
-    text-decoration: none;
-    color: #1f2029;
-}
 .action_name{
     font-size: 0.62vw;
     font-weight: 600;
 }
 
+.bag-item-count{
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.6vw;
+    height: 0.7vw;
+    position: relative;
+    top: -2.4vw;
+    left: 0.4vw;
+    width: 0.7vw;
+    font-weight: 700;
+    cursor: pointer;
+}
 /* Main section */
 .banner_container {
     margin: 4vw 0;
@@ -127,12 +141,14 @@ header {
     font-weight: 700;
 }
 
-.category-items {
+.category-items , .items-container{
     width: 80%;
-    margin: 50px 10%;
+    margin: 4% 10%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
 }
 
 .sale_item {
@@ -169,4 +185,82 @@ header {
     text-align: center;
     padding: 1.5vw;
     font-size: 1vw;
+}
+
+.items-container{
+    width: 80%;
+    margin: 6% 10%;
+}
+
+.item-container{
+     width: 13vw;
+     margin-top: -4%;
+     margin-left: -1%;
+}
+
+.item-image{
+      width: 100%;
+}
+
+.rating{
+      font-size: 0.7vw;
+      font-weight: 700;
+}
+.company-name{
+    margin-top: 6%;
+    font-size: 0.9vw;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 4%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.item-name{
+     color: #53535766;
+     font-size: 0.8vw;
+     line-height: 1;
+     margin-bottom: 0;
+     margin-top: 0;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     font-weight: 400;
+     display: block;
+}
+.price{
+    font-size: 0.8vw;
+    line-height: 15px;
+    color: #282c3f;
+    white-space: nowrap;
+    margin-top: 0.5vw;
+}
+.current-price{
+    font-size: 0.8vw;
+    font-weight: 400;
+    color:#282c3f;
+}
+.original-price{
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    font-size: 0.6vw;
+}
+.discount{
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 0.6vw;
+    margin-left: 0.3vw;
+}
+.btn-add-bag{
+    background-color: lightgreen;
+    border: none;
+    padding: 1.2% 1.5%;
+    margin-top: 3%;
+    font-size: 1vw;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
 }
